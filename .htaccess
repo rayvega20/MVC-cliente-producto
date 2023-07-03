@@ -1,0 +1,13 @@
+#PASO 1#
+
+#Establecer una regla para esta carpeta.
+#Las solicitudes a esta carpeta, se redireccionarán
+#al archivo PHP de mi preferencia.
+#Adicional, se enviará una variable por el metodo GET
+#para enrutar los controladores y sus acciones
+
+#Activar la reglas
+RewriteEngine On
+
+#Regla: comodin archivo?variable codigos
+RewriteRule ^(.*)$ inicio.php?url=$1 [L,QSA]
